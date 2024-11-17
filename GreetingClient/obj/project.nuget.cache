@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4h8soSqxUFQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Josh\\Documents\\GitHub\\A2_Dist_App\\GreetingClient\\GreetingClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Josh\\.nuget\\packages\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\Josh\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Josh\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

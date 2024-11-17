@@ -1,0 +1,15 @@
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\bin\Debug\net8.0\GreetingClient.exe
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\bin\Debug\net8.0\GreetingClient.deps.json
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\bin\Debug\net8.0\GreetingClient.runtimeconfig.json
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\bin\Debug\net8.0\GreetingClient.dll
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\bin\Debug\net8.0\GreetingClient.pdb
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\GreetingClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\GreetingClient.AssemblyInfoInputs.cache
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\GreetingClient.AssemblyInfo.cs
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\GreetingClient.csproj.CoreCompileInputs.cache
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\GreetingClient.sourcelink.json
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\GreetingClient.dll
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\refint\GreetingClient.dll
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\GreetingClient.pdb
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\GreetingClient.genruntimeconfig.cache
+C:\Users\Josh\Documents\GitHub\A2_Dist_App\GreetingClient\obj\Debug\net8.0\ref\GreetingClient.dll

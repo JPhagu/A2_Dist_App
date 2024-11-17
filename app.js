@@ -1,24 +1,15 @@
 const express = require('express');
-const sqlite3 = require('sqlite3').verbose();
+const greetingRoutes = require('./routes/greeting'); // Import greeting API routes
+
 const app = express();
 
-// Middleware
+// Middleware to parse JSON body
 app.use(express.json());
 
-// Connect to SQLite
-const db = new sqlite3.Database('./database.db', (err) => {
-    if (err) {
-        console.error(err.message);
-    }
-    console.log('Connected to SQLite database.');
-});
+// Use greeting routes
+app.use('/api', greetingRoutes);
 
-// Example route
-app.get('/', (req, res) => {
-    res.send('Welcome to the Web API!');
-});
-
-// Start server
+// Start the server
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);

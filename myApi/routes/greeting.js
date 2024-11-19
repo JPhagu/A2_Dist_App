@@ -5,13 +5,10 @@ const router = express.Router();
 // POST route to fetch a greeting based on timeOfDay, language, and tone
 router.post('/greeting', (req, res) => {
     const { timeOfDay, language, tone } = req.body;
+    
+    console.log('Received request with:', { timeOfDay, language, tone });
 
-    // Validate the request body
-    if (!timeOfDay || !language || !tone) {
-        return res.status(400).json({ error: 'timeOfDay, language, and tone are required.' });
-    }
-
-    // Query the database to fetch the corresponding greeting message
+    // Your database query logic
     db.get('SELECT greetingMessage FROM Greetings WHERE timeOfDay = ? AND language = ? AND tone = ?',
         [timeOfDay, language, tone], (err, row) => {
             if (err) {
@@ -19,16 +16,16 @@ router.post('/greeting', (req, res) => {
                 return res.status(500).send('Internal Server Error');
             }
 
+            // Log the row fetched from the database
+            console.log('Row fetched:', row);
+
             if (!row) {
+                console.log('No greeting found for the given criteria.');
                 return res.status(404).json({ error: 'Greeting not found for the given criteria.' });
             }
 
-            // Send the response with the greeting message (GreetingResponse model)
-            const greetingResponse = {
-                greetingMessage: row.greetingMessage,
-            };
-
-            res.json(greetingResponse);  // Return the GreetingResponse model
+            console.log('Greeting found:', row.greetingMessage);
+            res.json({ greetingMessage: row.greetingMessage, tone });
         });
 });
 

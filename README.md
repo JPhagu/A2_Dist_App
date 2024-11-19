@@ -9,9 +9,16 @@ run this:
 ```
 npm install
 ```
+```
+npm install express sqlite3
+```
 then this to run the api:
 ```
 node app.js
+```
+to run the client:
+```
+dotnet run
 ```
 # Testing
 ## 1. POST /greeting

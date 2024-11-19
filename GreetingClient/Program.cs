@@ -1,7 +1,9 @@
 ﻿
 using System.Net.Http.Json;
 
-
+// Created by:     Joshua Phagu
+// Email:          jphagu1941@conestogac.on.ca
+// Student Number: 8761941
 namespace GreetingClient
 {
     class Program{
@@ -37,7 +39,7 @@ namespace GreetingClient
             tone = string.IsNullOrWhiteSpace(tone) ? "Formal" : tone; // Default to Formal if input is empty
 
             var greeting = await GetGreeting(timesOfDay[timeOfDayIndex], languages[languageIndex], tone);
-            Console.WriteLine($"\nGreeting: {greeting.Message} (Tone: {greeting.Tone})");
+            Console.WriteLine($"\nGreeting: {greeting.GreetingMessage} (Tone: {greeting.Tone})");
         }
 
         private static async Task<List<string>> FetchTimesOfDay(){
@@ -55,7 +57,7 @@ namespace GreetingClient
                 Language = language,
                 Tone = tone // Include the Tone property
             };
-            var response = await client.PostAsJsonAsync(BaseUrl + "Greet", request);
+            var response = await client.PostAsJsonAsync(BaseUrl + "greeting", request);
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<GreetingResponse>();
         }
@@ -68,7 +70,7 @@ namespace GreetingClient
     }
 
     public class GreetingResponse{
-        public string? Message { get; set; }
+        public string? GreetingMessage { get; set; }
         public string? Tone { get; set; } // Include Tone in response
     }
 }

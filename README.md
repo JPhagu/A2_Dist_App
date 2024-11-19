@@ -1,9 +1,13 @@
 # A2_Dist_App
+### Created by:     Joshua Phagu | Email:          jphagu1941@conestogac.on.ca | Student Number: 8761941
+
 API Base URL
 The base URL for the API is:
 
 http://localhost:3000/api
 
+GitHub Repo Link:
+https://github.com/JPhagu/A2_Dist_App/invitations
 # Setup
 run this:
 ```

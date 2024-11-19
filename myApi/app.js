@@ -1,3 +1,6 @@
+// Created by:     Joshua Phagu
+// Email:          jphagu1941@conestogac.on.ca
+// Student Number: 8761941
 const express = require('express');
 const bodyParser = require('body-parser');
 const greetingRoutes = require('./routes/greeting');  // Import greeting.js routes

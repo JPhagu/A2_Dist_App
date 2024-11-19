@@ -9,6 +9,10 @@ http://localhost:3000/api
 GitHub Repo Link:
 https://github.com/JPhagu/A2_Dist_App/invitations
 # Setup
+navigate to myApi:
+```
+cd myApi
+```
 run this:
 ```
 npm install
